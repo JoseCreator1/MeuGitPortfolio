@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Wg.play</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="subhtmls/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="subhtmls/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="subhtmls/favicon/favicon-16x16.png">
+  <link rel="manifest" href="subhtmls/favicon/site.webmanifest">
+</head>
+<body>
+  <main>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="_bootstrap.js"></script>
+  <main class="main-principal">
+    <section>
+      <script>
+        function menuShow() {
+          let menuMobile = document.querySelector('.mobile-menu');
+          if (menuMobile.classList.contains('open')) {
+              menuMobile.classList.remove('open');
+          } else {
+              menuMobile.classList.add('open')
+          }
+      }      
+      </script>
+      <style>
+        #spannav{
+          background-image: url(https://i.pinimg.com/originals/e9/71/af/e971af61af23182e2362c3d7577d5078.gif);
+        }
+      </style>
+      <div class="navtotal">
+      <div class="card bg-light mb-3" id="navprimary">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: white;"><span class="badge rounded-pill bg-success" id="spannav" width="30px">Wg.play</span></a>
+          <button onclick="menuShow()" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto" >
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"><button type="button" class="btn btn-outline-primary"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Go-home.svg/2048px-Go-home.svg.png" width="18px">Home</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="subhtmls/jogoswg.html"><button type="button" class="btn btn-outline-danger"><img src="https://em-content.zobj.net/source/skype/289/joystick_1f579-fe0f.png" width="20px">Jogos</button></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="subhtmls/categoriaswg.html"><button type="button" class="btn btn-outline-info"><img src="https://s3.minijuegosgratis.com/media/icons/categories/svg/navbar/icon-cat-action.svg?v=_1686200123" width="18" height="18">Categorias <span class="badge bg-info rounded-pill">+14</span></button></a>
+              </li>
+              <li class="nav-item">
+                <a class="badge rounded-pill bg-light" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="sobre">
+                  <img src="https://em-content.zobj.net/thumbs/120/samsung/349/information_2139-fe0f.png" width="20px"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+      <div class="mobile-menu">
+        <!--colocar a ul bonitinha aqui-->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><span class="badge bg-primary"><img src="https://em-content.zobj.net/thumbs/120/mozilla/36/house-building_1f3e0.png" width="20px">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="badge bg-danger"><img src="https://em-content.zobj.net/source/skype/289/joystick_1f579-fe0f.png" width="20px">Jogos</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#"><span class="badge bg-warning"><img src="https://em-content.zobj.net/thumbs/120/joypixels/340/fast-down-button_23ec.png" width="20px">Categorias</span></a>
+          </li>
+          <li class="nav-item">
+            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><span class="badge bg-secondary"><img src="https://em-content.zobj.net/thumbs/120/samsung/349/information_2139-fe0f.png" width="20px">Sobre</span></a>
+          </li>
+          <style>
+            .mobile-menu{
+              background-image: url(https://thumbs.gfycat.com/HarmfulOptimalAlligatorsnappingturtle-size_restricted.gif);
+            }
+          </style>
+        </ul>
+      </div>
+    </section>
+    <!--NavBar acaba aqui-->
+    <!--Offcanva da parte Sobre da Navbar-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sobre o Site  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9892934f-6880-48f7-82ff-918430f875c9/d9vllht-88fd3c58-3ee1-4c5c-b213-20bf199c9abb.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk4OTI5MzRmLTY4ODAtNDhmNy04MmZmLTkxODQzMGY4NzVjOVwvZDl2bGxodC04OGZkM2M1OC0zZWUxLTRjNWMtYjIxMy0yMGJmMTk5YzlhYmIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XtNPPmuipDGMzQAK163_W0zVqgZPbDk4c6Sf3-DdnYs" width="42px"></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <span class="badge rounded-pill bg-success" id="spannav">Wg.play</span> ~ (Webgames.play)
+          <br><br>
+          Este site foi criado por um aluno de informatica do Instituto federal do piaui (IFPI). 
+          As imagens que estão nesse site são apenas ilustrativas e podem conter direitos autorais.
+          É um projeto de site de jogos baseado em sites ja existentes como exemplo a <a href="https://www.crazygames.com.br/" target="_blank">CrazyGames </a>e<a href="https://www.minijogos.com.br/" target="_blank"> MiniJogos</a>.
+          <p>Neste site estão presente alguns dos meus jogos favoritos de navegador, foi minha ideia principal para criar este site.</p><p>Este site está em sua versão BETA 1.0.0 (lançamento)</p>
+          Autor: <em class="text-primary">José Arthur</em><img src="https://gifdb.com/images/high/goose-cap-dancing-twirl-ngfwocbc4bwvhbtd.gif" width="22px"><br>
+          Contato: <img src="img-favs/wpp.png" width="18" height="18"><a href="https://wa.me/89988098087">(89)988098087</a>
+          <br><img src="img-favs/gmail.png" width="18" height="14"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmXHpBXRgZLcNQkLWpnrtBLCxMvCHwmDmRsvljCXGbPDTzTSZgvFlDmsMHNWXnkvbSSkMR" target="_blank"> ssjosearthur@gmail.com</a>
+          <br>Para: <em class="text-success">IFPI campus picos, introdução ao desenvolvimento web</em><img src="https://i.gifer.com/origin/aa/aa5165eb495c25971190bbaf72ad38fb_w200.webp" width="24px">
+          <p>A estilização presente neste site está disponivel em <a href="https://bootswatch.com/cyborg/" target="_blank">Bootswatch.com</a></p>
+        </div>
+        <div class="alert alert-dismissible alert-light">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Obrigado por ler até aqui!</strong> ;). <a href="#" class="alert-link">Tenha um bom dia.</a><p>29/06/2023</p>
+          <!-- background animado de fundo -->
+          <div class="background" >
+          <div class="stars"></div>
+          <div class="stars2" ></div>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+    <section class="conteiner">
+      <section>
+        <h2>Jogos em Destaque!&#x2705;</h2>
+        <div class="card border-success mb-3" style="margin-left: 2%;">
+        <main class="destaks" id="content">
+          
+          <div class="maior">
+          <section>
+            <a href="/subhtmls/jogoswg.html">
+            <img src="https://i0.wp.com/www.parentgalactique.fr/wp-content/uploads/2014/06/700x450_Empire.jpg?fit=700%2C450&ssl=1" width="610px" style="border-radius: 10px;" class="img-responsive">
+          </a>
+          </section>
+          </div>
+          <div class="menor">
+            <!-- Imagem 700x450 -->
+          <section>
+            <a href="subhtmls/jogos.html">
+            <img src="img/1v1.lol-online-building-&-shooting-simulator (1).jpg"  width="200px" style="border-radius: 10px;" class="img-responsive"></a>
+          </section>
+          <section>
+            <a href="subhtmls/jogos.html#">
+            <img src="img/evio.jpg" width="200px" style="border-radius: 10px;" class="img-responsive"></a>
+          </section>
+          <section>
+            <a href="subhtmls/jogos.html">
+            <img src="img/fnf.jpg" width="200px" style="border-radius: 10px;" class="img-responsive"></a>
+          </section>
+          </div>
+        </div>
+        </main>
+      </section> 
+    </section>
+    <!--Secão de populares -->
+    <main class="populares">
+    <h2> Populares&#127881;</h2>
+    <section id="pop_contents">
+    <div class="card border-success mb-3" style="max-width: 20rem;">
+      <div class="card-header">Categoria \ Medieval</div>
+      <div class="card-body">
+        <h4 class="card-title">Imperia online</h4>
+        <iframe width="290" height="200" src="https://www.youtube.com/embed/IoUEIIBmYX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+      <a href="https://imperiaonline.org" target="_blank"><span class="badge bg-success">Jogue Agora!</span></a>
+      </div>
+    </div>
+
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Categoria \ Construção e Aventura</div>
+      <div class="card-body">
+        <h4 class="card-title">Bloxd.io</h4>
+        <iframe width="290" height="200" src="https://www.youtube.com/embed/VOdd_um84M8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a href="https://bloxd.io/" target="_blank"><span class="badge bg-primary">Jogue Agora!</span></a>
+      </div>
+    </div>
+
+    <div class="card border-info mb-3" style="max-width: 20rem;">
+      <div class="card-header">Categoria \ Tiro em primeira pessoa</div>
+      <div class="card-body">
+        <h4 class="card-title">Krunker.io</h4>
+        <iframe width="290" height="200" src="https://www.youtube.com/embed/8T33i-a0bFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a href="https://krunker.io" target="_blank"><span class="badge bg-info">Jogue Agora!</span></a>
+      </div>
+    </div>
+
+    <div class="card border-danger mb-3" style="max-width: 20rem;">
+      <div class="card-header">Categoria \ Guerra</div>
+      <div class="card-body">
+        <h4 class="card-title">Supremacy 1914</h4>
+        <iframe width="290" height="200" src="https://www.youtube.com/embed/rE9_uH0z_vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a href="https://imperiaonline.org" target="_blank"><span class="badge bg-danger">Jogue Agora!</span></a>
+      </div>
+    </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--parte de baixo do site-->
+    <div id="footer" class="">
+      <div class="footer_content">
+      
+          <div class="rule"></div>
+              <div id="footer_logo_steam"><img src="" alt="" border="0"></div>
+        
+          <div id="footer_logo"><a href="" target="_blank" rel=""><img src="" alt="" border="0"></a></div>
+          <div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+              <div>parte de baixo do site</div>
+              <div>&nbsp;&nbsp;
+      
+                  <a href="" target="_blank" rel="">Política de Privacidade</a>
+                  &nbsp; | &nbsp;
+                  <a href="" target="_blank" rel="">Termos Legais</a>
+                  &nbsp; | &nbsp;
+                  <a href="" target="_blank" rel="">Acordo de Assinatura</a>
+                  &nbsp; | &nbsp;
+                  <a href="" target="_blank" rel="">Direitos autorais</a>
+                  &nbsp; | &nbsp;
+                  <a href="" target="_blank" rel="">Cookies</a>
+      
+              </div>
+          
+          </div>
+      </div>
+
+
+
+
+
+
+
+  </main>
+</body>
+</html>
